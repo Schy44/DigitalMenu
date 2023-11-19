@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Burger</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Cherry Bomb One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=M PLUS Rounded 1c' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bona Nova' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="links">
+                <div class="logo">
+                    <img src="{% static 'images/burger-logo (1).png' %}">
+                </div>
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'menu' %}">Menu</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+
+
+            <div class="log-sign">
+                <div class="log-in">
+                    <a href="{% url 'user_login' %}">Log in</a>
+                </div>
+
+                <div class="sign-up">
+                    <a href="{% url 'signup' %}">Sign up</a>
+                </div>
+
+            </div>
+
+
+    </header>
+
+    <section class="main">
+
+
+        <div class="image">
+            <img src="{% static 'images/burgermain.png' %}">
+        </div>
+
+        <div class="container">
+
+            <h2>Bite into Pure happiness</h2>
+
+            <p class="text1">Want a delicious meal?</p>
+
+            <p class="text2">Craving Snacks? Look No
+                <br> Further than Snacks Lane for
+                <br>a Snacking Experience Like
+                <br>No Other.
+            </p>
+
+        </div>
+
+        <div class="view">
+            <a href="{% url 'menu' %}"> Burger Menu</a>
+            <i class="fa-solid fa-circle-arrow-right"></i>
+
+        </div>
+
+
+
+    </section>
+
+</body>
+
+</html>

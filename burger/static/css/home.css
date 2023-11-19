@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/body-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    margin-left: 80px;
+    margin-top: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.59);
+    transition: 0.2s ease-in-out;
+}
+
+.links a {
+    color: rgb(241, 230, 230);
+    text-decoration: none;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: 'Bona Nova';
+    transition: 0.2s ease-in-out;
+}
+
+.links a:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    border: 2px solid white;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.log-sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Bona Nova';
+
+}
+
+.log-in {
+    margin-right: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.log-in:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    border-bottom: 2px solid white;
+}
+
+.sign-up {
+
+    height: 40px;
+    width: 100px;
+    border: 2px solid #BF5F15;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+
+}
+
+.sign-up:hover {
+    background-color: #BF5F15;
+    border-radius: 5px;
+
+}
+
+.log-sign a {
+
+    color: rgb(241, 230, 230);
+    text-decoration: none;
+
+}
+
+.main {
+    display: flex;
+}
+
+.image {
+    position: absolute;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.container h2 {
+    font-family: 'Cherry Bomb One';
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 220px;
+    left: 629px;
+    display: inline-block;
+    width: 1188px;
+
+}
+
+
+.container .text1 {
+    font-family: 'M PLUS Rounded 1c';
+    font-size: 30px;
+    font-weight: 700;
+    color: #BF5F15;
+    position: absolute;
+    top: 320px;
+    left: 700px;
+    color: white;
+
+}
+
+.container .text2 {
+    font-family: 'Bona Nova';
+    font-size: 22px;
+    color: white;
+    padding-top: 20px;
+    position: absolute;
+    top: 370px;
+    left: 700px;
+}
+
+.view {
+    background-color: #BF5F15;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-left: 800px;
+    margin-top: 500px;
+    font-family: 'Bona Nova';
+    font-size: 20px;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+}
+
+.view:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.view i {
+    font-size: 20px;
+}
+
+.view a {
+    text-decoration: none;
+    color: white;
+}

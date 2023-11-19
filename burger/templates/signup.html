@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup </title>
+  <link rel="icon" type="image/png" href="{% static 'images/burger-logo (1).png' %}">
+  <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://fonts.googleapis.com/css?family=Bona Nova' rel='stylesheet'>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <form action="" method="post">
+      {% csrf_token %}
+
+      <h2>Create An Account</h2>
+
+      <div class="form_container">
+        <div class="form_control">
+          <label for="username"> User Name </label>
+          <input id="username" name="username" placeholder="Enter user Name..." />
+        </div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_control">
+          <label for="email"> Email Address</label>
+          <input id="email" name="email" placeholder="Enter Your Email..." />
+        </div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_control">
+          <label for="phn-no"> Phone No </label>
+          <input id="phn-no" name="phn-no" placeholder="Enter Your Phone no..." />
+        </div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_control">
+          <label for="password1"> Password </label>
+          <input type="password" id="password1" name="password1" placeholder="Enter password..." />
+        </div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_control">
+          <label for="password2">Confirm Password </label>
+          <input type="password" id="password2" name="password2" placeholder="Confirm password..." />
+        </div>
+      </div>
+
+      <div class="text">
+        By creating an account you are joining OriginalBurger and
+        agree to
+        <br> the OriginalBurger’s <a href="#">PRIVACY POLICY</a>
+        and <a href="#">TERMS & CONDITIONS</a>
+
+        <div class="text2">
+          <a href="{% url 'user_login' %}">i have already account</a>
+        </div>
+      </div>
+
+      <div class="create-acc">
+        <button>Create Account</button>
+      </div>
+
+
+    </form>
+  </div>
+
+</body>
+
+</html>

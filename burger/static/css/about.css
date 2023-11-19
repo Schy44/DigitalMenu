@@ -1,0 +1,150 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+
+body
+{
+    background-image: url(../images/body-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.img
+{
+    margin: 20px 20px; 
+}
+
+.header
+{
+    display: flex;
+    margin: 20px 500px;
+}
+
+.header h1
+{
+    margin-top: 40px;
+    font-family: 'Bona Nova';
+    font-size: 34px;
+    color: white;
+}   
+
+.main p
+{   
+    margin: 10px 380px;
+    padding: 20px 30px;
+    letter-spacing: 5px;
+    font-family: 'Bona Nova';
+    font-size: 20px;
+    font-weight: 600;
+    /* background-color: white; */
+    color: rgb(235, 235, 134);
+    border-radius: 10px;
+}
+
+
+.cards
+{
+    height: 300px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: #974610 ;
+   
+}
+
+.cards h3
+{
+    color: #974610 ;
+}
+
+
+.optn1,
+.optn2,
+.optn3
+{
+   
+    height:110px;
+    width:300px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);  
+    background-color: aliceblue;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+
+.optn1 .icon
+{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #974610 ;
+}
+
+.optn2 .icon
+{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #974610 ;
+}
+
+.optn3 .icon
+{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #974610 ;
+}
+
+.cards p
+{
+    color: #974610 ;
+}
+
+.optn1,
+.optn2,
+.optn3 :hover
+{
+    cursor: pointer;
+   
+    
+}
+
+.optn1:hover
+{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.optn2:hover
+{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.optn3:hover
+{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+footer
+
+{
+    height: 60px;
+    background-color: #BF5F15;
+    color: white;
+    font-family: 'Bona Nova';
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Bona Nova' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Cherry Bomb One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=M PLUS Rounded 1c' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bona Nova' rel='stylesheet'>
+</head>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="img"><img src="{% static 'images/menu-img.png' %}"></div>
+
+        <div class="container">
+            <h2>Our Menu</h2>
+            <h3>Burgers</h3>
+        </div>
+
+        <div class="menu-list">
+            {% for burgerMenu in burgerMenus %}
+            <div class="list-name">
+                <div class="list{{ forloop.counter }}">
+                    <h2>{{ burgerMenu.name }}</h2>
+                    <h3>{{ burgerMenu.price }}</h3>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="menu-brief">
+            {% for burgerMenu in burgerMenus %}
+            <div class="brief{{ forloop.counter }}">
+                <p>
+                    {{ burgerMenu.description }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    <div class="chef-special">
+        {% for chefSpecial in chefSpecials %}
+        <h1><i>Chef Special</i></h1>
+        <div class="chef-img">
+            <img src="{{ chefSpecial.image.url }}" alt="{{ chefSpecial.name }}">
+        </div>
+        <div class="chef-header">
+            <h2>{{ chefSpecial.name }}</h2>
+            <h3>{{ chefSpecial.price }} Taka</h3>
+        </div>
+        <div class="chef-menu-brief">
+            <p>{{ chefSpecial.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <br><br>
+
+    <div class="view">
+        <a href="{% url 'view' %}"> Others Menu</a>
+        <i class="fa-solid fa-circle-arrow-right"></i>
+
+    </div>
+
+
+
+</body>
+
+</html>

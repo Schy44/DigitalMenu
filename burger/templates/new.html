@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Menu</title>
+    <link rel="icon" type="image/png" href="{% static 'images/burger-logo (1).png' %}">
+    <link rel="stylesheet" href="{% static 'css/view.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Bona Nova' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="explore">
+            Explore Our Menu
+        </div>
+        <div class="grid">
+            <p>Number of menu items: {{ menuItems|length }}</p>
+            {% for item in menuItems %}
+            <div class="item{{ item.id }}">
+                <img class="grid-image" src="{{item.image.url}} alt=" {{ item.alt_text }}">
+                <div class="item-description">{{ item.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+
+body
+{
+    background-image: url(../images/body-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.container
+{
+    margin-top: 3px;
+    height: 800px;
+    width:700px;
+    margin-left: 300px;
+    border: 4px solid #BF5F15;
+    background-color: aliceblue;
+}
+
+.container h2
+{
+    font-family: 'Blinker';
+    font-size:30px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form_container {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+   
+  }
+
+  .form_control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input
+   {
+    width:400px;
+    padding: 4px 8px;
+    border: 1px solid  #BF5F15;
+    font-size: 15px;
+    margin-left: 140px;
+  }
+
+  input:focus
+  {
+    color:  #BF5F15;
+  }
+
+  .form_container label
+  {
+    margin-left: 140px;
+    font-family: 'Bona Nova';
+  }
+
+  .text
+  {
+    margin-left: 120px;
+    padding-top: 30px;
+  }
+
+  .text a
+  {
+    color: black;
+  }
+
+  .create-acc
+  {
+    width:150px;
+    border: 2px solid  #BF5F15;
+    padding: 10px 20px;
+    margin-left:270px ;
+    margin-top: 40px;
+    font-weight: 500;
+    
+  }
+
+  .create-acnt
+  {
+    display: flex;
+    text-align: center;
+    margin-left: 2px;
+  }
+
+  .create-acc:hover
+{
+   background-color: #BF5F15;
+   border-radius: 5px;
+   cursor: pointer;
+  
+}
+  

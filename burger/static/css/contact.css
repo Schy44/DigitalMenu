@@ -1,0 +1,105 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+
+body
+{
+    background-image: url(../images/body-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+
+.Contact
+{
+    background-color: #BF5F15;
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    margin: 60px 500px;
+    border: 4px solid white;
+    border-radius: 5px;
+}
+
+.img
+{
+    margin: 20px 20px; 
+}
+
+.header
+{
+    display: flex;
+}
+
+.header h2
+{
+    margin-top: 40px;
+    font-family: 'Bona Nova';
+    font-size: 28px;
+
+}
+
+.text1
+{
+    margin-left: 80px;
+    font-family: 'Fjalla One';
+    letter-spacing: 5px;
+}
+
+.social-media
+{
+    display: flex;
+    font-size: 20px;
+    gap:30px;
+    color: azure;
+    font-size: 30px;
+    padding: 40px 110px;
+}
+
+.social-media:hover
+{
+    cursor:pointer;
+  
+}
+
+.fb:hover
+{
+    color: black;
+}
+
+.insta:hover
+{
+    color: black;
+}
+
+.twitter:hover
+{
+    color: black;
+}
+
+.text2 h2
+{
+    margin-left: 90px;
+    font-family: 'Fjalla One';
+    letter-spacing: 5px;
+}
+
+.text2 h3
+{
+    margin-left: 50px;
+    padding-top: 30px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.text2 p
+{
+    margin-left: 90px;
+    padding-top: 40px;
+    font-size: 20px;
+    color: aliceblue;
+}

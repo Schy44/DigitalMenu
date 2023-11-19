@@ -1,0 +1,135 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+
+ body
+{
+    background-image: url(../images/body-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
+     display: flex;
+    justify-content: center; 
+     
+}  
+
+ .explore
+{
+  text-align: center;
+  padding-bottom: 15px;
+  color: white;
+  font-family: 'Bona Nova';
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 5px;
+} 
+
+
+.container
+{
+   padding: 15px 9%;
+   padding-bottom: 100px;
+    
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)) ;
+    gap:30px;
+    font-family: 'Bona Nova';
+    color:rgb(233, 233, 32); 
+    font-size: 30px;
+}
+
+
+ 
+
+.grid-image 
+ {
+     height:280px; 
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.grid-image:hover
+{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+} 
+
+
+
+@media (max-width:600px) {
+    
+    
+    .grid-image 
+ {
+     height:250px; 
+ }
+
+}
+
+@media (max-width:430px) {
+   
+    
+.grid
+{
+    font-size: 23px;
+}    
+    
+    .grid-image 
+ {
+     height:250px; 
+     margin-left: 10px;
+    
+}
+
+.chicken
+{
+    margin-left: 50px;
+}
+
+.pizza
+{
+    margin-left: 50px;
+}
+
+.fries
+{
+    margin-left: 50px;
+}
+
+.sandwich
+{
+    margin-left: 50px;
+}
+
+.nachos
+{
+    margin-left: 50px;
+}
+
+.pastry
+{
+    margin-left: 50px;
+}
+
+.shake
+{
+    margin-left: 50px;
+}
+
+.hot-coffee
+{
+    margin-left: 50px;
+}
+
+
+}
